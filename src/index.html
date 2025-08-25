@@ -235,42 +235,11 @@
       </div>
 
       <div
-        class="container mx-auto px-4 sm:px-0 mt-10 flex flex-col sm:flex-row justify-between"
+        class="container mx-auto px-4 sm:px-0 mt-10 grid sm:grid-cols-4 gap-4"
       >
+        <!-- Card 1 -->
         <div
-          class="shadow-lg p-8 rounded-lg shadow-indigo-300/50 mr-0 sm:mr-4 mb-5 bg-white dark:bg-gray-800 dark:text-white"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-10 text-indigo-500 mb-3"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
-            />
-          </svg>
-          <h4 class="font-bold text-xl mb-2">Mobile Development</h4>
-          <div class="flex flex-col justify-center items-center">
-            <p>
-              Building cross-platform mobile apps with smooth UI and reliable
-              backend integration, ensuring performance and scalability.
-            </p>
-
-            <div
-              class="flex space-x-3 mt-4 justify-center sm:justify-start text-3xl"
-            >
-              <i class="devicon-react-original colored"></i>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="shadow-lg p-8 rounded-lg shadow-indigo-300/50 mr-0 sm:mr-4 mb-5 bg-white dark:bg-gray-800 dark:text-white"
+          class="shadow-lg p-8 rounded-lg shadow-indigo-300/50 bg-white dark:bg-gray-800 dark:text-white flex flex-col"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -288,23 +257,49 @@
           </svg>
 
           <h4 class="font-bold text-xl mb-2">Web Development</h4>
-          <div class="flex flex-col items-center justify-center">
-            <p>
-              Crafting responsive and modern web applications using fullstack
-              technologies, optimized for usability and maintainability.
-            </p>
-
-            <div
-              class="flex space-x-3 mt-4 justify-center sm:justify-start text-3xl"
-            >
-              <i class="devicon-react-original colored"></i>
-              <i class="devicon-tailwindcss-plain colored"></i>
-            </div>
+          <p class="flex-1">
+            Creating responsive and modern websites with fast performance and
+            seamless user experience using the latest technologies.
+          </p>
+          <div class="flex space-x-3 mt-4 justify-center text-3xl">
+            <i class="devicon-react-original colored"></i>
+            <i class="devicon-tailwindcss-plain colored"></i>
+            <i class="devicon-nodejs-plain colored"></i>
           </div>
         </div>
 
+        <!-- Card 2 -->
         <div
-          class="shadow-lg p-8 rounded-lg shadow-indigo-300/50 mr-0 sm:mr-4 mb-5 bg-white dark:bg-gray-800 dark:text-white"
+          class="shadow-lg p-8 rounded-lg shadow-indigo-300/50 bg-white dark:bg-gray-800 dark:text-white flex flex-col"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-10 text-indigo-500 mb-3"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+            />
+          </svg>
+
+          <h4 class="font-bold text-xl mb-2">Mobile Development</h4>
+          <p class="flex-1">
+            Building cross-platform mobile apps with smooth UI and reliable
+            backend integration, ensuring performance and scalability.
+          </p>
+          <div class="flex space-x-3 mt-4 justify-center text-3xl">
+            <i class="devicon-react-original colored"></i>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="shadow-lg p-8 rounded-lg shadow-indigo-300/50 bg-white dark:bg-gray-800 dark:text-white flex flex-col"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -321,23 +316,20 @@
             />
           </svg>
 
-          <h4 class="font-bold text-xl mb-2">Backend & API Development</h4>
-          <div class="flex flex-col justify-center items-center">
-            <p>
-              Designing robust server-side systems and APIs with clean
-              architecture, enabling secure and scalable data-driven solutions.
-            </p>
-            <div
-              class="flex space-x-3 mt-4 justify-center sm:justify-start text-3xl"
-            >
-              <i class="devicon-nodejs-plain colored"></i>
-              <i class="devicon-java-plain colored"></i>
-            </div>
+          <h4 class="font-bold text-xl mb-2">Backend Development</h4>
+          <p class="flex-1">
+            Building robust backend systems and APIs with a focus on security,
+            scalability, and maintainability for long-term success.
+          </p>
+          <div class="flex space-x-3 mt-4 justify-center text-3xl">
+            <i class="devicon-nodejs-plain colored"></i>
+            <i class="devicon-java-plain colored"></i>
           </div>
         </div>
 
+        <!-- Card 4 -->
         <div
-          class="shadow-lg p-8 rounded-lg shadow-indigo-300/50 mr-0 sm:mr-4 mb-5 bg-white dark:bg-gray-800 dark:text-white"
+          class="shadow-lg p-8 rounded-lg shadow-indigo-300/50 bg-white dark:bg-gray-800 dark:text-white flex flex-col"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -355,21 +347,13 @@
           </svg>
 
           <h4 class="font-bold text-xl mb-2">Cloud & DevOps</h4>
-          <div class="flex flex-col justify-center items-center">
-            <p>
-              Deploying and maintaining applications on cloud platforms, with
-              CI/CD, containerization, and monitoring for reliability.
-            </p>
-            <div
-              class="flex space-x-3 mt-4 justify-center sm:justify-start text-3xl"
-            >
-              <img
-                src="https://icongr.am/devicon/amazonwebservices-original.svg?size=48&color=currentColor"
-                alt="AWS"
-                class="w-8 h-8"
-              />
-              <i class="devicon-docker-plain colored"></i>
-            </div>
+          <p class="flex-1">
+            Helping businesses deploy, monitor, and scale applications on the
+            cloud with CI/CD pipelines and DevOps best practices.
+          </p>
+          <div class="flex space-x-3 mt-4 justify-center text-3xl">
+            <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+            <i class="devicon-docker-plain colored"></i>
           </div>
         </div>
       </div>
