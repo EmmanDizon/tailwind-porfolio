@@ -35,7 +35,17 @@ setTheme(savedTheme);
 //************MENU TOGGLE************************* */
 const menuToggle = document.getElementById("menu-toggle");
 const mainMenu = document.getElementById("main_menu");
+const menuIcon = menuToggle.querySelector("img");
+let menuOpen = false;
 
 menuToggle.addEventListener("click", () => {
   mainMenu.classList.toggle("hidden");
+  menuOpen = !menuOpen;
+  if (menuOpen) {
+    menuIcon.src = "images/open-menu.svg"; // Make sure this file exists
+    menuIcon.alt = "close-menu-icon";
+  } else {
+    menuIcon.src = "images/hamburger-menu.svg";
+    menuIcon.alt = "menu-icon";
+  }
 });
