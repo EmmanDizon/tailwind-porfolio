@@ -1,23 +1,25 @@
 const toggles = document.querySelectorAll("#theme-toggle, #theme-toggle-2");
 const icons = document.querySelectorAll(
-  "#theme-toggle img, #theme-toggle-icon-2"
+  "#theme-toggle img, #theme-toggle-2 img"
 );
 
 function setTheme(mode) {
   document.documentElement.setAttribute("data-theme", mode);
   localStorage.theme = mode;
 
-  // swap icon
-  if (mode === "dark") {
-    themeIcon.src = "images/moon.svg";
-    themeIcon.alt = "dark-mode-logo";
-  } else {
-    themeIcon.src = "images/sun.svg";
-    themeIcon.alt = "light-mode-logo";
-  }
+  // update all toggle icons
+  icons.forEach((icon) => {
+    if (mode === "dark") {
+      icon.src = "images/moon.svg";
+      icon.alt = "dark-mode-logo";
+    } else {
+      icon.src = "images/sun.svg";
+      icon.alt = "light-mode-logo";
+    }
+  });
 }
 
-// attach click events to both toggles
+// attach click to both toggles
 toggles.forEach((toggle) => {
   toggle.addEventListener("click", () => {
     const isDark =
@@ -25,6 +27,15 @@ toggles.forEach((toggle) => {
     setTheme(isDark ? "light" : "dark");
   });
 });
-// restore saved theme or default to light
+
+// restore saved theme (default to light)
 const savedTheme = localStorage.theme || "light";
 setTheme(savedTheme);
+
+//************MENU TOGGLE************************* */
+const menuToggle = document.getElementById("menu-toggle");
+const mainMenu = document.getElementById("main_menu");
+
+menuToggle.addEventListener("click", () => {
+  mainMenu.classList.toggle("hidden");
+});
