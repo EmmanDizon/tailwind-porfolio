@@ -1,22 +1,8 @@
 const toggles = document.querySelectorAll("#theme-toggle, #theme-toggle-2");
-const icons = document.querySelectorAll(
-  "#theme-toggle img, #theme-toggle-2 img"
-);
 
 function setTheme(mode) {
   document.documentElement.setAttribute("data-theme", mode);
   localStorage.theme = mode;
-
-  // update all toggle icons
-  icons.forEach((icon) => {
-    if (mode === "dark") {
-      icon.src = "images/sun.png";
-      icon.alt = "light-mode-logo";
-    } else {
-      icon.src = "images/moon.png";
-      icon.alt = "dark-mode-logo";
-    }
-  });
 }
 
 // attach click to both toggles
