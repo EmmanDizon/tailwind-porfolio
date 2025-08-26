@@ -10,11 +10,11 @@ function setTheme(mode) {
   // update all toggle icons
   icons.forEach((icon) => {
     if (mode === "dark") {
-      icon.src = "public/images/moon.svg";
-      icon.alt = "dark-mode-logo";
-    } else {
-      icon.src = "public/images/sun.svg";
+      icon.src = "images/sun.png";
       icon.alt = "light-mode-logo";
+    } else {
+      icon.src = "images/moon.png";
+      icon.alt = "dark-mode-logo";
     }
   });
 }
